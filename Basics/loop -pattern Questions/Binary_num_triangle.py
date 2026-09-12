@@ -14,7 +14,7 @@ Given an integer n. You need to recreate the pattern given below for any value o
 Print the pattern in the function given to you."""
 
 
-n = 4
+n = 5
 
 for i in range(1, n+1):
     for j in range(1, i+1):

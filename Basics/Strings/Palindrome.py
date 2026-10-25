@@ -1,0 +1,32 @@
+# Remove all non-alphanumeric char and convert lower case 
+
+s = "A man, a plan, a canal: Panama"
+
+def isAlphanumeric(s):
+    x = ord(s)
+    if 97 <= x <= 122 or 65<= x <= 90 or 48<= x <= 57:
+        return True
+    return False
+
+s = s.lower()
+
+i = 0
+j = len(s) - 1
+
+while i < j:
+    if not isAlphanumeric(s[i]):
+        i+= 1
+    elif not isAlphanumeric(s[j]):
+        j -= 1
+    elif s[i] == s[j]:
+        i+=1
+        j-=1
+    else:
+        print("Not Palindrome")
+        break
+else:
+    print("Palindrome")
+    
+    
+        
+    

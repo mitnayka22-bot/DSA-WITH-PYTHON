@@ -13,6 +13,6 @@ for i in address1:
     if i != ".":
         ans += i
     else:
-        ans += "[.]"
+        ans += " [.] "
         
 print(ans)

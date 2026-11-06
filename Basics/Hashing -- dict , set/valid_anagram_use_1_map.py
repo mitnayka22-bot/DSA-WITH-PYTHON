@@ -8,7 +8,6 @@ Check str is valid anagram or not
 s1 = "anagram"
 s2 = "nagaram"
 
-freq = {}
 
 if len(s1) != len(s2):
     print("Not anagram")
